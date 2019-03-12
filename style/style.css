@@ -1,0 +1,263 @@
+@charset "UTF-8";
+/*ссылки на фото
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/background/about-bg.jpg
+
+
+
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/brand-img1.png
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/brand-img2.png
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/brand-img3.png
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/brand-img4.png
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/brand-img5.png
+
+лого
+
+
+
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/model-img1.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/model-img2.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/model-img3.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/test-img.jpg
+
+хз
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/thumb01.jpg
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 14px/24px 'Montserrat', sans-serif;
+}
+
+.container {
+  padding: 0 19%;
+}
+
+.container .title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.container .subtitle {
+  font-family: "Crimson Text", serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #787878;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.container .subtitle::after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 40px;
+  height: 2px;
+  top: 50px;
+  left: 0;
+}
+
+.container .article-text {
+  font: 14px/24px 'Roboto Condensed', sans-serif;
+  color: #666;
+  margin-top: 25px;
+}
+
+/*--------- Header -----------*/
+.header {
+  background: url(https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/background/about-bg.jpg) no-repeat center;
+  position: relative;
+}
+
+.header-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  padding: 50px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.header-top .main-menu a {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 30px;
+  text-decoration: none;
+  padding: 0 20px;
+  opacity: .8;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.header-top .main-menu a:first-child {
+  padding-left: 0;
+}
+
+.header-top .main-menu a:last-child {
+  padding-right: 0;
+}
+
+.header-top .main-menu a:hover {
+  opacity: 1;
+}
+
+.header-top .main-menu li {
+  list-style: none;
+  display: inline-block;
+}
+
+.header-top .add-container {
+  padding-left: 15px;
+}
+
+.header-top .add-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header-top .add-container .fas {
+  font-weight: 700;
+  font-size: .8em;
+  position: relative;
+}
+
+.header-top .add-container .fa-search {
+  padding-right: 20px;
+}
+
+.header-top .add-container .fa-search::after {
+  width: 1px;
+  height: 10px;
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  opacity: .5;
+  top: 2px;
+  left: 24px;
+}
+
+.header-top .add-container .fa-shopping-cart::after {
+  content: "0";
+  position: absolute;
+  text-align: center;
+  padding: 2px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  top: -15px;
+  left: 10px;
+}
+
+.banner {
+  padding: 150px 0 280px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.banner .page-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.banner .secondary-nav {
+  margin-top: 30px;
+  line-height: 30px;
+}
+
+.banner .secondary-nav a {
+  color: #fff;
+  padding-right: 30px;
+  position: relative;
+  text-decoration: none;
+}
+
+.banner .secondary-nav a::after {
+  content: "/";
+  position: absolute;
+  right: 10px;
+  top: -5px;
+}
+
+.banner .secondary-nav li {
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(30%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -ms-linear-gradient(-180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+/*-------- About us ----------*/
+.about-us {
+  margin: 90px 0 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us .about {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding-right: 10%;
+}
+
+.about-us .sm-gallery {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (148px)[3];
+      grid-template-columns: repeat(3, 148px);
+  -ms-grid-rows: (148px)[3];
+      grid-template-rows: repeat(3, 148px);
+  grid-gap: 13px;
+}
+/*# sourceMappingURL=style.css.map */

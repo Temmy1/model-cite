@@ -1,13 +1,4 @@
 @charset "UTF-8";
-/*ссылки на фото
-https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/background/about-bg.jpg
-
-
-
-хз
-https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/thumb01.jpg
-
-*/
 * {
   margin: 0;
   padding: 0;
@@ -69,9 +60,43 @@ body {
   color: #666;
 }
 
+.container .btn {
+  display: inline-block;
+  margin-top: 35px;
+  border: 2px solid #000;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background: transparent;
+  color: #000;
+  padding: 5px 25px;
+  font: 700 12px/24px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.container .btn:hover {
+  background: #ee997b;
+  border-color: #ee997b;
+  color: #fff;
+}
+
+.container .btn::after {
+  content: "➞";
+  font-weight: 700;
+  padding-left: 5px;
+}
+
 /*--------- Header -----------*/
-.header {
-  background: url(https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/background/about-bg.jpg) no-repeat center;
+.about-page .header {
+  background: url("https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/background/about-bg.jpg") no-repeat center;
   position: relative;
 }
 
@@ -185,11 +210,13 @@ body {
   font-size: 60px;
   font-weight: 700;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .banner .secondary-nav {
   margin-top: 30px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .banner .secondary-nav a {
@@ -277,34 +304,6 @@ body {
 
 .idea .idea-text .article-text {
   color: #333;
-}
-
-.idea .idea-text .btn {
-  display: inline-block;
-  margin-top: 35px;
-  border: 2px solid #000;
-  border-radius: 19px;
-  background: transparent;
-  color: #000;
-  padding: 10px 20px;
-  font: 700 12px/1em "Roboto Condensed", sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  transition: .3s ease-in-out;
-  -webkit-transition: .3s ease-in-out;
-  -moz-transition: .3s ease-in-out;
-  -ms-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
-}
-
-.idea .idea-text .btn:hover {
-  background: #fff;
-}
-
-.idea .idea-text .btn::after {
-  content: "➞";
-  font-weight: 700;
-  padding-left: 5px;
 }
 
 .idea .overlay {
@@ -517,5 +516,68 @@ body {
 
 .bottom-footer .social .networks li:last-child {
   padding-right: 0;
+}
+
+/* links to images 
+
+
+
+
+
+
+
+
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/2.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/3.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/4.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/5.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/6.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/7.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/8.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/9.jpg
+*/
+/*-------- Header --------*/
+.blog-page .header {
+  background: url("https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/background/blog-bg.jpg") no-repeat center;
+  position: relative;
+}
+
+.top-blogs {
+  padding-top: 90px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.other-blogs {
+  padding-top: 45px;
+  padding-bottom: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.other-blogs .blog-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 33.33%;
+          flex: 0 1 33.33%;
 }
 /*# sourceMappingURL=style.css.map */

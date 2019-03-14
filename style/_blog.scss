@@ -1,0 +1,52 @@
+/* links to images 
+
+
+
+
+
+
+
+
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/2.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/3.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/4.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/5.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/6.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/7.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/8.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/9.jpg
+*/
+
+
+/*-------- Header --------*/
+
+.blog-page {
+    .header {
+        background: url('https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/background/blog-bg.jpg') no-repeat center;
+        position: relative;
+    }
+}
+
+.top-blogs {
+    padding-top: 90px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+      
+}
+
+.other-blogs {
+    padding-top: 45px;
+    padding-bottom: 115px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    .blog-item {
+        flex: 0 1 33.33%;
+    }
+}

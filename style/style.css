@@ -13,6 +13,19 @@ body {
   padding: 0 19%;
 }
 
+.container .logo {
+  opacity: .7;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.container .logo:hover {
+  opacity: 1;
+}
+
 .container .title {
   font-size: 40px;
   font-weight: 700;
@@ -92,6 +105,12 @@ body {
   content: "➞";
   font-weight: 700;
   padding-left: 5px;
+}
+
+.container .details {
+  font-family: "Roboto Condensed", sans-serif;
+  line-height: 28px;
+  color: #666;
 }
 
 /*--------- Header -----------*/
@@ -243,9 +262,9 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(30%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.5)));
-  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: -ms-linear-gradient(-180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 30%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.9)), color-stop(30%, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -ms-linear-gradient(-180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.5) 100%);
 }
 
 /*-------- About us ----------*/
@@ -518,30 +537,13 @@ body {
   padding-right: 0;
 }
 
-/* links to images 
-
-
-
-
-
-
-
-
-https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/2.jpg
-https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/3.jpg
-https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/4.jpg
-https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/5.jpg
-https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/6.jpg
-https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/7.jpg
-https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/8.jpg
-https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/blog/9.jpg
-*/
 /*-------- Header --------*/
 .blog-page .header {
   background: url("https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/background/blog-bg.jpg") no-repeat center;
   position: relative;
 }
 
+/*------- Top Posts --------*/
 .top-blogs {
   padding-top: 90px;
   padding-bottom: 40px;
@@ -558,26 +560,141 @@ https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap
           justify-content: space-between;
 }
 
+.top-blogs .top-article {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 65%;
+          flex: 0 1 65%;
+}
+
+.top-blogs .top-article .post {
+  position: relative;
+}
+
+.top-blogs .top-article .post img {
+  max-width: 100%;
+  height: auto;
+}
+
+.top-blogs .top-article .post figcaption {
+  width: 80%;
+  position: absolute;
+  bottom: 155px;
+  left: 0;
+  background-color: #fff;
+  padding: 25px 40px 10px 0;
+}
+
+.top-blogs .top-article .post .details {
+  margin-bottom: 15px;
+}
+
+.top-blogs .top-article .post .details .comment {
+  color: inherit;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.top-blogs .top-article .post .details .comment:hover {
+  color: #ee997b;
+}
+
+.top-blogs .top-article .post .title {
+  font-size: 30px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.top-blogs .top-article .post .article-text {
+  width: 80%;
+}
+
+.top-blogs .top-article .post .btn {
+  margin-top: 25px;
+}
+
+.top-blogs .motivation-block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+}
+
+.top-blogs .motivation-block .quote {
+  text-align: center;
+  padding: 35px 25px 50px;
+  background-color: #f3f3f3;
+}
+
+.top-blogs .motivation-block .quote .miniature {
+  -webkit-clip-path: circle(39% at 39%);
+          clip-path: circle(39% at 39%);
+  -webkit-transform: translate(8%, 0);
+          transform: translate(8%, 0);
+  margin-bottom: 10px;
+}
+
+.top-blogs .motivation-block .quote .name {
+  font-size: 14px;
+  line-height: 2em;
+}
+
+.top-blogs .motivation-block .quote .logo {
+  margin-top: 20px;
+}
+
+.top-blogs .motivation-block blockquote {
+  padding: 30px 60px 60px 25px;
+  margin-top: 30px;
+  background-color: #272727;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 81%, 0% 100%);
+}
+
+.top-blogs .motivation-block blockquote .article-text {
+  margin-top: 0px;
+  color: #fff;
+}
+
+.top-blogs .motivation-block blockquote .article-text span {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+.top-blogs .motivation-block blockquote .article-text span::before {
+  content: "";
+  background-color: #ee997b;
+  position: absolute;
+  width: 35px;
+  height: 1px;
+  bottom: 7px;
+  left: 0;
+}
+
+/*-------Other Posts -------*/
 .other-blogs {
   padding-top: 45px;
   padding-bottom: 115px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 35px;
 }
 
-.other-blogs .blog-item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 33.33%;
-          flex: 0 1 33.33%;
+.other-blogs .blog-item .blog-title {
+  color: #000;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.other-blogs .blog-item .article-text {
+  margin-top: 15px;
 }
 /*# sourceMappingURL=style.css.map */

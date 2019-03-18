@@ -680,12 +680,25 @@ body {
 .other-blogs {
   padding-top: 45px;
   padding-bottom: 115px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 25px;
-  grid-row-gap: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.other-blogs .blog-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 31%;
+          flex: 0 1 31%;
+  margin-bottom: 35px;
 }
 
 .other-blogs .blog-item .blog-title {
@@ -696,5 +709,206 @@ body {
 
 .other-blogs .blog-item .article-text {
   margin-top: 15px;
+}
+
+/*
+
+
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/comment-img1.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/comment-img2.jpg
+
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/gram-img1.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/gram-img2.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/gram-img3.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/gram-img4.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/gram-img5.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/gram-img6.jpg
+
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/s-post-img1.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/s-post-img2.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/s-post-img3.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/s-post-img4.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/s-post-img5.jpg
+https://demo.bootstrapthemes.co/html/
+pouseidon-free-html5-model-agency-bootstrap-template/assets/images/thumb01.jpg
+*/
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 90px;
+  padding-bottom: 120px;
+}
+
+/*---------Blog-content --------------*/
+.blog-content {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 74%;
+          flex: 0 1 74%;
+}
+
+.blog-content .post {
+  padding-bottom: 45px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.blog-content .post img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-content .post .title {
+  font-size: 30px;
+  line-height: 28px;
+}
+
+.blog-content .post .details a {
+  text-decoration: none;
+  color: #666;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+}
+
+.blog-content .post .details a:hover {
+  color: #ee997b;
+}
+
+.blog-content .post .details i {
+  padding-right: 5px;
+}
+
+.blog-content .post .details span {
+  padding: 0 15px;
+}
+
+.blog-content .post .details span:first-child {
+  padding-left: 0;
+}
+
+.blog-content .post .details span:last-child {
+  padding-right: 0;
+}
+
+.blog-content .post .details .author,
+.blog-content .post .details .theme {
+  position: relative;
+}
+
+.blog-content .post .details .author::after,
+.blog-content .post .details .theme::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;
+  height: 16px;
+  background-color: #eaeaea;
+}
+
+.blog-content .info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 40px 0;
+}
+
+.blog-content .info-block .date {
+  background-color: #ee997b;
+  color: #fff;
+  text-align: center;
+  width: 45px;
+  height: 70px;
+  margin-right: 25px;
+}
+
+.blog-content .info-block .date span {
+  display: block;
+  position: relative;
+}
+
+.blog-content .info-block .date span.day {
+  top: 5px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 6px;
+}
+
+.blog-content .info-block .date span.month {
+  top: 10px;
+}
+
+.blog-content .text-block {
+  padding: 0 70px;
+}
+
+.blog-content .text-block .note-text {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.blog-content .text-block .note-quote {
+  font: 18px/25px "Crimson Text", serif;
+  color: #333;
+  margin: 35px 0 35px 25px;
+  padding: 5px 0 5px 25px;
+  border-left: 3px solid #eaeaea;
+}
+
+.blog-content .text-block .share {
+  text-align: right;
+  margin-top: 25px;
+}
+
+.blog-content .text-block .share span {
+  font-size: 13px;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding-right: 25px;
+}
+
+.blog-content .text-block .share a {
+  color: #000;
+  font-size: 14px;
+  line-height: 28px;
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  border: 1px solid #ddd;
+  transition: .3s ease-in-out;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -ms-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  text-align: center;
+}
+
+.blog-content .text-block .share a:hover {
+  color: #fff;
+  border-color: #ee997b;
+  background-color: #ee997b;
+}
+
+.blog-content .text-block .share a i {
+  vertical-align: text-bottom;
+}
+
+/*------- Side-info ---------*/
+.additional {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
 }
 /*# sourceMappingURL=style.css.map */

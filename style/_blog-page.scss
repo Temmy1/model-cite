@@ -1,0 +1,189 @@
+@import 'mixins';
+
+/*
+
+
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/comment-img1.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/comment-img2.jpg
+
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/gram-img1.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/gram-img2.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/gram-img3.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/gram-img4.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/gram-img5.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/gram-img6.jpg
+
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/s-post-img1.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/s-post-img2.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/s-post-img3.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/s-post-img4.jpg
+https://demo.bootstrapthemes.co/html/pouseidon-free-html5-model-agency-bootstrap-template/assets/images/s-post-img5.jpg
+https://demo.bootstrapthemes.co/html/
+pouseidon-free-html5-model-agency-bootstrap-template/assets/images/thumb01.jpg
+*/
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 90px;
+    padding-bottom: 120px;
+
+}
+
+
+/*---------Blog-content --------------*/
+.blog-content {
+    flex: 0 1 74%;
+
+
+    .post {
+        padding-bottom: 45px;
+        border-bottom: 1px solid #eaeaea;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .title {
+            font-size: 30px;
+            line-height: 28px;
+        }
+        .details {
+            
+            a {
+                text-decoration: none;
+                color: #666;
+                @include link-transit();
+
+                &:hover {
+                    color: #ee997b;
+                }
+            }
+            i {
+                padding-right: 5px;
+            }
+            span {
+                padding: 0 15px;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+            .author,
+            .theme {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 1px;
+                    height: 16px;
+                    background-color: #eaeaea;
+
+                }
+            }
+        }
+
+        
+    }
+
+    .info-block {
+        display: flex; 
+        flex-direction: row;
+        margin: 40px 0;
+
+        .date {
+            background-color: #ee997b;
+            color: #fff;
+            text-align: center;
+            width: 45px;
+            height: 70px;
+            margin-right: 25px;
+
+
+            span {
+                display: block;
+                position: relative;
+
+                &.day {
+                    top: 5px;
+                    border-bottom: 1px solid #fff;
+                    padding-bottom: 6px;
+                }
+                &.month {
+                    top: 10px;
+                }
+            }
+        }
+    }
+
+    .text-block {
+        padding: 0 70px;
+
+
+        .note-text {
+            font-family: $roboto-font;
+        }
+        .note-quote {
+            font: 18px/25px $crimson-font;
+            color: #333;
+            margin: 35px 0 35px 25px;
+            padding: 5px 0 5px 25px;
+            border-left: 3px solid #eaeaea;   
+        }
+
+        .share {
+            text-align: right;
+            margin-top: 25px;
+
+
+            span {
+                font-size: 13px;
+                line-height: 28px;
+                text-transform: uppercase;
+                padding-right: 25px;
+            }
+            a {
+                color: #000;
+                font-size: 14px;
+                line-height: 28px;
+                display: inline-block;
+                width: 33px;
+                height: 33px;
+                border: 1px solid #ddd;
+                @include link-transit;
+                text-align: center;
+              
+
+                &:hover {
+                    color: #fff;
+                    border-color: #ee997b;
+                    background-color: #ee997b;
+                }
+                
+                i {
+                    vertical-align: text-bottom;
+                }
+                  
+
+            }
+        }
+    }
+
+    
+    
+}
+
+
+/*------- Side-info ---------*/
+.additional {
+    flex: 0 1 25%;
+}

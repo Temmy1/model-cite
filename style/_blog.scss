@@ -1,14 +1,4 @@
-$crimson-font: 'Crimson Text', serif;
-$montserrat-font: 'Montserrat', sans-serif;
-$roboto-font: 'Roboto Condensed', sans-serif;
-
-@mixin link-transit {
-    transition: .3s ease-in-out;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -ms-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
-}
+@import 'mixins';
 
 /*-------- Header --------*/
 
@@ -33,7 +23,7 @@ $roboto-font: 'Roboto Condensed', sans-serif;
 
     .top-article {
         flex: 0 1 65%;
-
+        
         .post {
             position: relative;
 
@@ -53,6 +43,7 @@ $roboto-font: 'Roboto Condensed', sans-serif;
             }
             .details {
                 margin-bottom: 15px;
+                
 
                 .comment {
                     color: inherit;
@@ -143,21 +134,22 @@ $roboto-font: 'Roboto Condensed', sans-serif;
 .other-blogs {
     padding-top: 45px;
     padding-bottom: 115px;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    // // align-items: baseline;
-    // flex-wrap: wrap;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 25px;
-    grid-row-gap: 35px;
-    // https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout/ если не придумаю ничего
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // align-items: center;
+    flex-wrap: wrap;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-column-gap: 25px;
+    // grid-row-gap: 35px;
+    
+  
 
 
     .blog-item {
-        // flex: 0 1 31%;
-        // margin-bottom: 35px;
+        flex: 0 1 31%;
+        margin-bottom: 35px;
 
         .blog-title {
             color: #000;

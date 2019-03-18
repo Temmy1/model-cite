@@ -1,0 +1,20 @@
+$crimson-font: 'Crimson Text', serif;
+$montserrat-font: 'Montserrat', sans-serif;
+$roboto-font: 'Roboto Condensed', sans-serif;
+
+@mixin article-text {
+    font: 14px/24px 'Roboto Condensed', sans-serif;
+}
+
+@mixin crimson {
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+}
+
+@mixin link-transit {
+    transition: .3s ease-in-out;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+}
